@@ -21,13 +21,11 @@
 # apt update
 # apt install wget gnupg software-properties-common ca-certificates lsb-release
 # wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add -
-```
-```
 # echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-```
-```
 # apt update
 # apt install -y mongodb-org
+```
+```
 # systemctl enable mongod
 # systemctl start mongod
 ```
@@ -38,13 +36,11 @@
 # apt update
 # apt install wget gnupg software-properties-common ca-certificates lsb-release
 # wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
-```
-```
 # echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-```
-```
 # apt update
 # apt install -y mongodb-org
+```
+```
 # systemctl enable mongod
 # systemctl start mongod
 ```
@@ -62,6 +58,8 @@ First, install Yarn and Node.js.
 # echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 # apt update
 # apt install yarn
+```
+```
 # wget -qO - https://deb.nodesource.com/setup_18.x | sudo -E bash -
 # apt install nodejs
 ```
@@ -83,6 +81,8 @@ First, install Yarn and Node.js.
 # echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 # apt update
 # apt install yarn
+```
+```
 # wget -qO - https://deb.nodesource.com/setup_18.x | sudo -E bash -
 # apt install nodejs
 ```
