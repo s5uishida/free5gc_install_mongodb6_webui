@@ -71,6 +71,13 @@ Then, install free5GC WebUI.
 # cd ..
 # make webconsole
 ```
+Run WebUI.
+```
+# cd webconsole
+# bin/webconsole
+...
+[GIN-debug] Listening and serving HTTP on :5000
+```
 
 <h3 id="ubuntu2204_webui">For Ubuntu 22.04</h3>
 
@@ -93,6 +100,13 @@ Then, install free5GC WebUI.
 # git checkout main
 # cd ..
 # make webconsole
+```
+Run WebUI.
+```
+# cd webconsole
+# bin/webconsole
+...
+[GIN-debug] Listening and serving HTTP on :5000
 ```
 
 ---
