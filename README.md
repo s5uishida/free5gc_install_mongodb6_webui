@@ -71,7 +71,7 @@ Then, install free5GC WebUI.
 # cd ..
 # make webconsole
 ```
-Run WebUI.
+Run the WebUI.
 ```
 # cd webconsole
 # bin/webconsole
@@ -101,7 +101,7 @@ Then, install free5GC WebUI.
 # cd ..
 # make webconsole
 ```
-Run WebUI.
+Run the WebUI.
 ```
 # cd webconsole
 # bin/webconsole
