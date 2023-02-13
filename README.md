@@ -60,7 +60,7 @@ First, install Yarn and Node.js.
 # apt install yarn
 ```
 ```
-# wget -qO - https://deb.nodesource.com/setup_18.x | sudo -E bash -
+# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
 # apt install nodejs
 ```
 Then, install free5GC WebUI.
@@ -90,7 +90,7 @@ First, install Yarn and Node.js.
 # apt install yarn
 ```
 ```
-# wget -qO - https://deb.nodesource.com/setup_18.x | sudo -E bash -
+# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
 # apt install nodejs
 ```
 Then, install free5GC WebUI.
