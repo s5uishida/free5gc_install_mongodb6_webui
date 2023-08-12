@@ -90,25 +90,7 @@ First, install Yarn and Node.js.
 # apt update
 # apt install yarn
 ```
-```
-# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
-# apt install nodejs
-```
-Then, install free5GC WebUI.
-```
-# git clone --recursive -j `nproc` https://github.com/free5gc/free5gc.git
-# cd free5gc/webconsole
-# git checkout main
-# cd ..
-# make webconsole
-```
-Run the WebUI.
-```
-# cd webconsole
-# bin/webconsole
-...
-[GIN-debug] Listening and serving HTTP on :5000
-```
+The rest of the work is the same as for Ubuntu 20.04.
 
 ---
 <h2 id="changelog">Changelog (summary)</h2>
