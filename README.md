@@ -60,6 +60,7 @@ Run the WebUI.
 ...
 [GIN-debug] Listening and serving HTTP on :5000
 ```
+If you want to set the binding IP address and port, please refer to [here](https://github.com/free5gc/webconsole/pull/56).
 
 ---
 <h2 id="changelog">Changelog (summary)</h2>
