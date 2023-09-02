@@ -33,7 +33,7 @@ The process for the following OS is shown here.
 
 It is assumed that MongoDB 6.0 and [Go](https://github.com/free5gc/free5gc/wiki/Installation) has been installed already.
 
-First, install Yarn and Node.js.
+First, install Yarn.
 ```
 # apt install wget
 # wget -qO - https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/yarn.gpg
@@ -41,9 +41,14 @@ First, install Yarn and Node.js.
 # apt update
 # apt install yarn
 ```
+Next, install Node.js, see [here](https://github.com/nodesource/distributions).
 ```
-# wget -qO - https://deb.nodesource.com/setup_18.x | bash -
-# apt install nodejs
+# apt install -y ca-certificates curl gnupg
+# mkdir -p /etc/apt/keyrings
+# curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+# echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+# apt update
+# apt install -y nodejs
 ```
 Then, install free5GC WebUI.
 ```
@@ -65,4 +70,5 @@ If you want to set the binding IP address and port, please refer to [here](https
 ---
 <h2 id="changelog">Changelog (summary)</h2>
 
+- [2023.09.02] Updated the Node.js installation procedure.
 - [2023.02.12] Initial release.
