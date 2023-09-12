@@ -65,10 +65,28 @@ Run the WebUI.
 ...
 [GIN-debug] Listening and serving HTTP on :5000
 ```
-If you want to set the binding IP address and port, please refer to [here](https://github.com/free5gc/webconsole/pull/56).
+If necessary, set the IP address and port to bind as follows (ex. `192.168.0.141:5000`).
+
+`free5gc/webconsole/config/webuicfg.yaml`
+```diff
+--- webuicfg.yaml.orig  2023-09-12 19:50:47.430599984 +0900
++++ webuicfg.yaml       2023-09-12 19:58:49.315487942 +0900
+@@ -3,6 +3,10 @@
+   description: WebUI initial local configuration
+ 
+ configuration:
++  webServer:
++    scheme: http
++    ipv4Address: 192.168.0.141
++    port: 5000
+   mongodb: # the mongodb connected by this webui
+     name: free5gc # name of the mongodb
+     url: mongodb://localhost:27017 # a valid URL of the mongodb
+```
 
 ---
 <h2 id="changelog">Changelog (summary)</h2>
 
+- [2023.09.12] Added how to set the IP address and port for WebUI.
 - [2023.09.02] Updated the Node.js installation procedure.
 - [2023.02.12] Initial release.
