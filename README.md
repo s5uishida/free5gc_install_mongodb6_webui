@@ -7,14 +7,18 @@ The process for the following OS is shown here.
 
 ---
 
-<h2 id="toc">Table of Contents</h2>
+<a id="toc"></a>
+
+## Table of Contents
 
 - [Install MongoDB 6.0](#install_mongodb)
 - [Install free5GC WebUI](#install_webui)
 - [Changelog (summary)](#changelog)
 
 ---
-<h2 id="install_mongodb">Install MongoDB 6.0</h2>
+<a id="install_mongodb"></a>
+
+## Install MongoDB 6.0
 
 ```
 # apt update
@@ -29,7 +33,9 @@ The process for the following OS is shown here.
 # systemctl start mongod
 ```
 
-<h2 id="install_webui">Install free5GC WebUI</h2>
+<a id="install_webui"></a>
+
+## Install free5GC WebUI
 
 It is assumed that MongoDB 6.0 and [Go](https://github.com/free5gc/free5gc/wiki/Installation) has been installed already.
 
@@ -85,7 +91,9 @@ If necessary, set the IP address and port to bind as follows (ex. `192.168.0.141
 ```
 
 ---
-<h2 id="changelog">Changelog (summary)</h2>
+<a id="changelog"></a>
+
+## Changelog (summary)
 
 - [2023.09.12] Added how to set the IP address and port for WebUI.
 - [2023.09.02] Updated the Node.js installation procedure.
