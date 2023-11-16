@@ -45,7 +45,7 @@ First, install Yarn.
 # wget -qO - https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/yarn.gpg
 # echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 # apt update
-# apt install yarn
+# apt install -y yarn
 ```
 Next, install Node.js, see [here](https://github.com/nodesource/distributions).
 ```
